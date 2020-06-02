@@ -42,18 +42,18 @@ endfunction
 ""  comment prefix dictionary;
 if !exists('g:cocoPrefixDict')
     let g:cocoPrefixDict = {
-/       'c'         :   '//',
-/       'cpp'       :   '//',
-/       'java'      :   '//',
-/       'javascript':   '//',
-/       'lua'       :   '--',
-/       'plaintex'  :   '%%',
-/       'scss'      :   '//',
-/       'sql'       :   '--',
-/       'tex'       :   '%%',
-/       'vim'       :   '""',
-/       'xdefaults' :   '!!',
-/   }
+\       'c'         :   '//',
+\       'cpp'       :   '//',
+\       'java'      :   '//',
+\       'javascript':   '//',
+\       'lua'       :   '--',
+\       'plaintex'  :   '%%',
+\       'scss'      :   '//',
+\       'sql'       :   '--',
+\       'tex'       :   '%%',
+\       'vim'       :   '""',
+\       'xdefaults' :   '!!',
+\   }
 endif
 
 ""  set default comment prefix;
