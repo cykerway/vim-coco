@@ -47,8 +47,10 @@ if !exists('g:cocoPrefixDict')
 /       'java'      :   '//',
 /       'javascript':   '//',
 /       'lua'       :   '--',
+/       'plaintex'  :   '%%',
 /       'scss'      :   '//',
 /       'sql'       :   '--',
+/       'tex'       :   '%%',
 /       'vim'       :   '""',
 /       'xdefaults' :   '!!',
 /   }
