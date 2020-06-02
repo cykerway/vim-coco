@@ -45,8 +45,10 @@ you can map them in vimrc;
         /       'java'      :   '//',
         /       'javascript':   '//',
         /       'lua'       :   '--',
+        /       'plaintex'  :   '%%',
         /       'scss'      :   '//',
         /       'sql'       :   '--',
+        /       'tex'       :   '%%',
         /       'vim'       :   '""',
         /       'xdefaults' :   '!!',
         /   }
