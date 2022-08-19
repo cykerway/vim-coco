@@ -1,5 +1,5 @@
 ""  ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-""  # coco: vim code commentator
+""  coco: vim code commentator;
 ""  ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ""  set filetype comment prefix;
@@ -44,6 +44,7 @@ if !exists('g:cocoPrefixDict')
     let g:cocoPrefixDict = {
 \       'c'         :   '//',
 \       'cpp'       :   '//',
+\       'css'       :   '//',
 \       'java'      :   '//',
 \       'javascript':   '//',
 \       'lua'       :   '--',

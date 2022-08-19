@@ -6,10 +6,18 @@ only line comments are supported (feature, not bug);
 
 ## install
 
-### vim >= 8.0
+install assumes vim 8.0 or later;
 
-    mkdir -p ~/.vim/pack/wtf/start
-    cp -r coco ~/.vim/pack/wtf/start/
+### with git
+
+    mkdir -p ~/.vim/pack/foo/start
+    cd ~/.vim/pack/foo/start
+    git clone https://github.com/cykerway/vim-coco.git
+
+### without git
+
+    mkdir -p ~/.vim/pack/foo/start/vim-coco
+    cp plugin ~/.vim/pack/foo/start/vim-coco/
 
 ## usage
 
@@ -40,18 +48,19 @@ you can map them in vimrc;
 -   `g:cocoPrefixDict` is a dict: (filetype) -> (comment prefix); default:
 
             let g:cocoPrefixDict = {
-        /       'c'         :   '//',
-        /       'cpp'       :   '//',
-        /       'java'      :   '//',
-        /       'javascript':   '//',
-        /       'lua'       :   '--',
-        /       'plaintex'  :   '%%',
-        /       'scss'      :   '//',
-        /       'sql'       :   '--',
-        /       'tex'       :   '%%',
-        /       'vim'       :   '""',
-        /       'xdefaults' :   '!!',
-        /   }
+        \       'c'         :   '//',
+        \       'cpp'       :   '//',
+        \       'css'       :   '//',
+        \       'java'      :   '//',
+        \       'javascript':   '//',
+        \       'lua'       :   '--',
+        \       'plaintex'  :   '%%',
+        \       'scss'      :   '//',
+        \       'sql'       :   '--',
+        \       'tex'       :   '%%',
+        \       'vim'       :   '""',
+        \       'xdefaults' :   '!!',
+        \   }
 
 -   `g:cocoDefaultPrefix` is a string: default comment prefix; default:
 
@@ -61,7 +70,7 @@ you can override defaults in vimrc;
 
 ## license
 
-Copyright (c) 2015-2019 Cyker Way
+Copyright (c) 2015-2022 Cyker Way
 
 This program is free software: you can redistribute it and/or modify it under
 the terms of the GNU General Public License as published by the Free Software
