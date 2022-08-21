@@ -1,5 +1,7 @@
 *coco.txt* Vim code commentator
 
+Version 1.2.0
+
 Copyright (C) 2015-2022 Cyker Way
 
 ==============================================================================
