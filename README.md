@@ -15,7 +15,7 @@ install assumes vim 8.0 or later;
 ### without git
 
     mkdir -p ~/.vim/pack/foo/start/vim-coco
-    cp plugin ~/.vim/pack/foo/start/vim-coco/
+    cp doc plugin ~/.vim/pack/foo/start/vim-coco/
 
 ## usage
 

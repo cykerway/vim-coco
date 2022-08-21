@@ -61,7 +61,7 @@ rare cases, they may need a prefix function to select the correct line comment
 prefix, using `g:coco_pf_dict`: >
 
     function MyCocoPFVim()
-        if getline(1) == 'vimscript9'
+        if getline(1) == 'vim9script'
             return '#'
         else
             return '"'
