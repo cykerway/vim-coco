@@ -1,0 +1,102 @@
+*coco.txt* Vim code commentator
+
+Copyright (C) 2015-2022 Cyker Way
+
+==============================================================================
+0. Contents                                                             *coco*
+
+    1. Intro  ................................. |coco-intro|
+    2. Config ................................. |coco-config|
+    3. Usage  ................................. |coco-usage|
+    4. Source ................................. |coco-source|
+    5. Donate ................................. |coco-donate|
+
+==============================================================================
+1. Intro                                                          *coco-intro*
+
+This plugin provides an easy-to-use tool to comment, uncomment and toggle code
+comments. Because line comments are much more widely used than block comments,
+only line comments are supported. Users can control the line comment prefix by
+means of strings and functions. The line comment prefix is based on file types
+which play nicely with auto commands. Users can map comment functions in vimrc
+to any keys they like.
+
+==============================================================================
+2. Config                                                        *coco-config*
+
+Users can config coco using these global variables:
+
+*g:coco_pf_dict* (dict)
+
+    This dict maps file types to prefix functions. A prefix function returns a
+    string to be used as line comment prefix.
+
+    This variable is optional.
+
+*g:coco_ps_dict* (dict)
+
+    This dict maps file types to prefix strings. A prefix string is directly
+    used as line comment prefix. When both prefix function and prefix string
+    exist for a file type, prefix function takes precedence. >
+
+    g:coco_ps_dict = {
+    /       'lua': '--',
+    /   }
+<
+    This variable is optional.
+
+*g:coco_ps* (string)
+
+    This string is used as line comment prefix when there is neither prefix
+    function nor prefix string defined for the file type. >
+
+    g:coco_ps = '#'
+<
+    This variable is optional.
+
+Normally, users only need to set |g:coco_ps_dict| and |g:coco_ps| in vimrc. In
+rare cases, they may need a prefix function to select the correct line comment
+prefix, using `g:coco_pf_dict`: >
+
+    function MyCocoPFVim()
+        if getline(1) == 'vimscript9'
+            return '#'
+        else
+            return '"'
+        endif
+    endfunction
+
+    let g:coco_pf_dict = {
+    \       'vim': function('MyCocoPFVim')
+    \   }
+<
+==============================================================================
+3. Usage                                                          *coco-usage*
+
+This plugin uses auto commands to select the correct line comment prefix. Thus
+when users have configured properly the line comment prefix should be ready to
+use. The line comment prefix has buffer scope.
+
+Users can call these functions to do comment work:
+
+*CocoComment* :     Comment the current line.
+*CocoUncomment* :   Uncomment the current line.
+*CocoToggle* :      Toggle comment the current line.
+
+For convenience, users can map them to any keys: >
+
+    :map <C-c> :call CocoComment()<CR>
+    :map <C-u> :call CocoUncomment()<CR>
+    :map <C-t> :call CocoToggle()<CR>
+<
+==============================================================================
+4. Source                                                        *coco-source*
+
+https://github.com/cykerway/vim-coco
+
+==============================================================================
+5. Donate                                                        *coco-donate*
+
+https://paypal.me/cykerway
+
+vim:tw=78:ts=8:noet:ft=help:norl:

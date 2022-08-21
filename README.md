@@ -1,8 +1,6 @@
 # vim-coco
 
-a vim code commentator;
-
-only line comments are supported (feature, not bug);
+vim code commentator;
 
 ## install
 
@@ -21,56 +19,11 @@ install assumes vim 8.0 or later;
 
 ## usage
 
-`coco` provides 3 functions:
-
--   `CocoComment()`: comment a line;
-
--   `CocoUncomment()`: uncomment a line;
-
--   `CocoToggle()`: toggle a line comment;
-
-you can call them directly:
-
-    :call CocoComment()
-
-or map them to key sequences:
-
-    :map <C-c> :call CocoComment()<CR>
-    :map <C-u> :call CocoUncomment()<CR>
-    :map <C-t> :call CocoToggle()<CR>
-
-you can map them in vimrc;
-
-## config
-
-`coco` provides 2 config variables:
-
--   `g:cocoPrefixDict` is a dict: (filetype) -> (comment prefix); default:
-
-            let g:cocoPrefixDict = {
-        \       'c'         :   '//',
-        \       'cpp'       :   '//',
-        \       'css'       :   '//',
-        \       'java'      :   '//',
-        \       'javascript':   '//',
-        \       'lua'       :   '--',
-        \       'plaintex'  :   '%%',
-        \       'scss'      :   '//',
-        \       'sql'       :   '--',
-        \       'tex'       :   '%%',
-        \       'vim'       :   '""',
-        \       'xdefaults' :   '!!',
-        \   }
-
--   `g:cocoDefaultPrefix` is a string: default comment prefix; default:
-
-        let g:cocoDefaultPrefix = '#'
-
-you can override defaults in vimrc;
+see `doc/coco.txt`;
 
 ## license
 
-Copyright (c) 2015-2022 Cyker Way
+Copyright (C) 2015-2022 Cyker Way
 
 This program is free software: you can redistribute it and/or modify it under
 the terms of the GNU General Public License as published by the Free Software
