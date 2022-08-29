@@ -58,7 +58,7 @@ Users can config coco using these global variables:
 
 Normally, users only need to set |g:coco_ps_dict| and |g:coco_ps| in vimrc. In
 rare cases, they may need a prefix function to select the correct line comment
-prefix, using `g:coco_pf_dict`: >
+prefix, using |g:coco_pf_dict|: >
 
     function MyCocoPFVim()
         if getline(1) == 'vim9script'
