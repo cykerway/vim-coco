@@ -42,8 +42,8 @@ Users can config coco using these global variables:
     exist for a file type, prefix function takes precedence. >
 
     g:coco_ps_dict = {
-    /       'lua': '--',
-    /   }
+    \       'lua': '--',
+    \   }
 <
     This variable is optional.
 
