@@ -25,6 +25,7 @@ let s:coco_ps_dict = {
 \       'objc'      :   '//',
 \       'php'       :   '//',
 \       'plaintex'  :   '%%',
+\       'rust'      :   '//',
 \       'scala'     :   '//',
 \       'scss'      :   '//',
 \       'sql'       :   '--',
