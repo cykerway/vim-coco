@@ -21,6 +21,7 @@ let s:coco_ps_dict = {
 \       'go'        :   '//',
 \       'java'      :   '//',
 \       'javascript':   '//',
+\       'kotlin'    :   '//',
 \       'lua'       :   '--',
 \       'objc'      :   '//',
 \       'php'       :   '//',
