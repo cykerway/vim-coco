@@ -80,7 +80,7 @@ This plugin uses autocommands to select the proper line comment prefix for the
 current file type. When users have configured properly the line comment prefix
 should be ready to use. The line comment prefix has buffer scope.
 
-Users can use mappings |coco_mappings| and commands |coco_commands| to comment.
+Users can use mappings |coco-mappings| and commands |coco-commands| to comment.
 
 ==============================================================================
 4. Mappings                                                    *coco-mappings*
